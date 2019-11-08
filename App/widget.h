@@ -15,6 +15,9 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+    /* Just for the sake of testing testing */
+    inline int multiply(int a, int b) const { return a * b; }
+
 private:
     Ui::Widget *ui;
 };

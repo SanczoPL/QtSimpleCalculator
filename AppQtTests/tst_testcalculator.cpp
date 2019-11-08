@@ -1,7 +1,6 @@
 #include <QtTest>
 #include <QCoreApplication>
-
-// add necessary includes here
+#include <widget.h>
 
 class TestCalculator : public QObject
 {
@@ -12,9 +11,12 @@ public:
     ~TestCalculator();
 
 private slots:
-    void test_case1();
+    /* Just for the sake of testing testing */
+    void test_case_multiply();
 
 };
+
+QTEST_MAIN(TestCalculator)
 
 TestCalculator::TestCalculator()
 {
@@ -26,11 +28,13 @@ TestCalculator::~TestCalculator()
 
 }
 
-void TestCalculator::test_case1()
+/* Just for the sake of testing testing */
+void TestCalculator::test_case_multiply()
 {
-
+    Widget w;
+    QCOMPARE(w.multiply(2,3),6);
 }
 
-QTEST_MAIN(TestCalculator)
+
 
 #include "tst_testcalculator.moc"
