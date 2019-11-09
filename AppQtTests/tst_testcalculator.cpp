@@ -1,6 +1,7 @@
 #include <QtTest>
 #include <QCoreApplication>
 #include <widget.h>
+#include <calculatorlogic.h>
 
 class TestCalculator : public QObject
 {
