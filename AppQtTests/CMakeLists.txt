@@ -28,10 +28,12 @@ set(SRC
 tst_testcalculator.cpp
 ../App/widget.cpp
 ../App/widget.ui
+../App/calculatorlogic.cpp
 )
 
 set(HEADERS
     ../App/widget.h
+    ../App/calculatorlogic.h
 )
 
 add_executable(${TARGET_NAME}

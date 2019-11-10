@@ -24,10 +24,12 @@ set(SRC
   main.cpp
   widget.cpp
   widget.ui
+  calculatorlogic.cpp
 )
 
 set(HEADERS
   widget.h
+  calculatorlogic.h
 )
 
 add_executable(${TARGET_NAME}
